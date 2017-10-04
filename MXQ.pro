@@ -5,6 +5,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = MXQ
 TEMPLATE = app
 
-HEADERS +=
+HEADERS += \
+    MainWindow.h
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    MainWindow.cpp
+
+RESOURCES += \
+    ressources.qrc

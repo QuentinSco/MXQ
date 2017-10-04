@@ -12,4 +12,4 @@ SOURCES += main.cpp \
     MainWindow.cpp
 
 RESOURCES += \
-    ressources.qrc
+    resources.qrc

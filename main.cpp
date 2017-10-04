@@ -1,11 +1,12 @@
 #include <QApplication>
-#include <QWidget>
+#include "MainWindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QWidget w;
-    w.setWindowTitle(QObject::tr("MXQ"));
+    app.setApplicationName("MXQ");
+
+    MainWindow w;
     w.show();
 
     return app.exec();

@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSplitter>
+
+#include "CentralWidget.h"
+#include "DateSelectionWidget.h"
+#include "DataWidget.h"
 
 class MainWindow : public QMainWindow
 {
@@ -9,6 +14,12 @@ class MainWindow : public QMainWindow
 
 private:
     Q_DISABLE_COPY(MainWindow)
+
+    QSplitter* m_splitter;
+
+    CentralWidget* m_centralWidget;
+    DateSelectionWidget* m_dateSelectionWidget;
+    DataWidget* m_dataWidget;
 
 protected:
 

@@ -6,10 +6,16 @@ TARGET = MXQ
 TEMPLATE = app
 
 HEADERS += \
-    MainWindow.h
+    MainWindow.h \
+    CentralWidget.h \
+    DateSelectionWidget.h \
+    DataWidget.h
 
 SOURCES += main.cpp \
-    MainWindow.cpp
+    MainWindow.cpp \
+    CentralWidget.cpp \
+    DateSelectionWidget.cpp \
+    DataWidget.cpp
 
 RESOURCES += \
     resources.qrc
